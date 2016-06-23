@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <base href="http://widgetPhone/">
+    <title>Widget Phone</title>
+
+    <script src="js/lib/jquery-1.11.0.min.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/common.css?v=01">
+</head>
+
+<body>
+
+<div id="overflow_div">
+
+    <!--header-->
+    <header class="content-wraper">
+        <div class="content clearfix">
+            <div class="contacts">
+                Телефон:<br>
+                <div> +7 915 732 40 44</div>
+                E-mail:<br>
+                <a href="mailto:info@cms-nc.ru">info@cms-nc.ru</a>
+            </div>
+        </div>
+    </header>
+
+    <!--content-->
+    <div class="content-wraper">
+        <div class="content">
+            <div class="overflower rightfloating clearfix">
+                <div class="floatblock padding-right"></div>
+
+                <!--center-block-->
+                <div class="floatblock center-middle">
+                    <div class="block-content" style="height: 1000px;"></div>
+
+
+                </div>
+
+
+                <!--left-block-->
+                <div class="floatblock left">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="hFooter"></div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="content">
+        <div class="footer-blocks-container clearfix">
+            <div class="contacts">
+                Телефон:<br>
+                <div>+7 (999) 999-99-99</div>
+                E-mail:<br>
+                <a href="mailto:info@cms-nc.ru">info@cms-nc.ru</a>
+            </div>
+            <div class="counter">
+                <!-- СЮДА ВСТАВЛЯЕМ КОДЫ СЧЕТЧИКОВ -->
+            </div>
+            <div class="copyright">
+                Разработка и продвижение сайта<br>
+                <a href="http://mastweb.ru/" target="_blank">ООО "МастерВеб"</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--widget-phone-->
+<div class="widget-phone">
+    <div class="widget-phone-circle"></div>
+    <div class="widget-phone-circle-fill"></div>
+    <div class="widget-phone-img"></div>
+    <div class="widget-phone-popup">
+        <form class="widget-phone-popup-form" action="widgetPhoneMailer.php" method="post">
+            <div class="text">Оставьте свой номер телефона<br>и мы Вам перезвоним</div>
+            <input name="url_page" type="hidden"/>
+            <div class="item-form-element phone">
+                <input class="phone" name="widgetPhone[phone]" type="text" placeholder="+7 (999) 123-45-67">
+                <div class="validation-informer"><span></span></div>
+            </div>
+            <a class="button" href="javascript:void(jQuery('.window.message .widget-phone-popup-form').standart_load({force:1, url:'/widgetPhoneMailer.php'} ));">Жду звонка!</a>
+        </form>
+    </div>
+</div>
+
+<!--!!!!!верстка для netcat!!!!!-->
+<!--widget-phone - -->
+<!--<div class="widget-phone">-->
+    <!--<div class="widget-phone-circle"></div>-->
+    <!--<div class="widget-phone-circle-fill"></div>-->
+    <!--<div class="widget-phone-img"></div>-->
+<!--</div>-->
+
+<!-- scripts -->
+<script src="js/lib/jquery.standart_load.js"></script>
+<script src="js/lib/jquery.standart_window.js"></script>
+<script src="js/lib/jquery.standart_widgetPhone.js"></script>
+<script src="js/lib/jquery.cookie.js"></script>
+<script src="js/app/common.js?v=01"></script>
+<!-- /scripts -->
+
+</body>
+</html>
